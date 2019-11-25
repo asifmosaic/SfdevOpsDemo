@@ -12,7 +12,7 @@ pool:
 steps:
 - task: Ant@1
   inputs:
-    options: -Dsf.username=$(sf.username) -Dsf.passwd=$(sf.passwd) -Dsf.loginUrl=$(sf.loginUrl)
+    options: -Dsf.username=$(sf.username) -Dsf.password=$(sf.password) -Dsf.loginUrl=$(sf.loginUrl)
     workingDirectory: ''
     buildFile: 'build.xml'
     javaHomeOption: 'JDKVersion'
