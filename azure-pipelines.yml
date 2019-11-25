@@ -16,7 +16,7 @@ steps:
     workingDirectory: 'build'
     buildFile: './build/build.xml'
     javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.8'
+    jdkVersionOption: '1.11'
     jdkArchitectureOption: 'x64'
     publishJUnitResults: false
     testResultsFiles: './build/TEST-*.xml'
