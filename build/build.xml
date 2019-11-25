@@ -29,6 +29,6 @@
     <!-- Retrieve an unpackaged set of metadata from your org -->
     <!-- The file unpackaged/package.xml lists what is to be retrieved -->
      <target name="deploy">
-        <sf:deploy username="{sf.username}" password="${sf.password}"  sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="mypkg" />
+        <sf:deploy username="{sf.username}" password="${sf.password}"  sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="../src" rollbackOnError="true" />
      </target>
 </project>
