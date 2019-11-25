@@ -14,7 +14,7 @@ steps:
   inputs:
     options: -Dsf.username=$(sf.username) -Dsf.password=$(sf.password) -Dsf.loginUrl=$(sf.loginUrl)
     workingDirectory: ''
-    buildFile: 'build.xml'
+    buildFile: './build/build.xml'
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: '1.8'
     jdkArchitectureOption: 'x64'
