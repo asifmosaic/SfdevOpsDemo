@@ -1,0 +1,17 @@
+<apex:page StandardController="Account" extensions="vftest">
+  <!-- Begin Default Content REMOVE THIS -->
+  <h1>Congratulations</h1>
+  This is your new Page: vftest
+  
+  <br/> <br/>
+  <!-- End Default Content REMOVE THIS -->
+  
+  The Message is: {!message}
+  
+  <apex:form >
+  
+  <apex:inputTextarea rows="5" cols="70" value="{!message}"/>
+  <apex:commandButton value="Submit" action="{!submit}"/>
+  
+  </apex:form>
+</apex:page>
