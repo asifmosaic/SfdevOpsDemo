@@ -12,11 +12,11 @@ pool:
 steps:
 - task: Ant@1
   inputs:
-    options: -Dsf.username=$(sf.username) -Dsf.passwd=$(sf.passwd) -Dsf.loginUrl=$(sf.loginUrl)
-    workingDirectory: ''
-    buildFile: 'build.xml'
+    options: -Dsf.username=$(sf.username) -Dsf.password=$(sf.password) -Dsf.serverurl=$(sf.serverurl)
+    workingDirectory: 'build'
+    buildFile: './build/build.xml'
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: '1.8'
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
-    testResultsFiles: '**/TEST-*.xml'
+    testResultsFiles: './build/TEST-*.xml'
